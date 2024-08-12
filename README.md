@@ -27,15 +27,15 @@ The algorithm used is for receiving and parsing telemetry data from a racing gam
     
 8. Main Loop: Enters an infinite loop to continuously receive and process telemetry data packets from the game. Inside the loop:
 
-a. It receives a packet from the UDP socket.
+ a. It receives a packet from the UDP socket.
 
-b. It parses the received packet using the parse_packet function.
+ b. It parses the received packet using the parse_packet function.
 
-c. If parsing is successful, it writes the parsed data to the CSV file using the DictWriter object and flushes the file.
+ c. If parsing is successful, it writes the parsed data to the CSV file using the DictWriter object and flushes the file.
 
-d. It prints some telemetry data to the console for debugging or monitoring purposes.
+ d. It prints some telemetry data to the console for debugging or monitoring purposes.
 
-e. Catches socket.error exceptions and prints an error message if any socket-related errors occur.
+ e. Catches socket.error exceptions and prints an error message if any socket-related errors occur.
 
 
 9. Socket Cleanup: Finally, when the loop exits (which can happen when the script is
